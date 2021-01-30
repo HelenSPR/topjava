@@ -1,4 +1,5 @@
 package ru.javawebinar.topjava.util;
+
 import java.time.LocalTime;
 
 public class TimeUtil {

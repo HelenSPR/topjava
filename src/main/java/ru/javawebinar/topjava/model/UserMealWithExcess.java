@@ -13,8 +13,6 @@ public class UserMealWithExcess {
 
     private final int calories;
 
-    public List<UserMeal> userMeal;
-
     public Boolean excess;
 
     public UserMealWithExcess(LocalDateTime dateTime, String description, int calories, Boolean excess) {
@@ -24,7 +22,9 @@ public class UserMealWithExcess {
         this.excess = excess;
     }
 
-    public LocalDate getDate() {return this.dateTime.toLocalDate(); }
+    public LocalDate getDate() {
+        return this.dateTime.toLocalDate();
+    }
 
     public LocalTime getLocalTime() {
         return dateTime.toLocalTime();
@@ -39,7 +39,6 @@ public class UserMealWithExcess {
                 ", excess=" + excess +
                 '}';
     }
-
 
 
 }
